@@ -1,7 +1,14 @@
 "use client";
 import Link from "next/link";
-import { MapPin, PhoneCall, Search, Menu, ChevronDown, ChevronUp } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import {
+  MapPin,
+  PhoneCall,
+  Search,
+  // Menu,
+  ChevronDown,
+  ChevronUp,
+} from "lucide-react";
+// import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,12 +18,12 @@ import {
 
 import { Input } from "./ui/input";
 import { usePathname } from "next/navigation";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetTitle,
-} from "@/components/ui/sheet";
+// import {
+//   Sheet,
+//   SheetContent,
+//   SheetTrigger,
+//   SheetTitle,
+// } from "@/components/ui/sheet";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -39,9 +46,7 @@ export default function Navbar() {
       <Link
         href="/services"
         className={`text-sm font-medium relative ${
-          pathname === "/services"
-            ? "text-primary font-bold"
-            : ""
+          pathname === "/services" ? "text-primary font-bold" : ""
         } hover:text-primary`}
       >
         Xizmatlar
@@ -51,7 +56,12 @@ export default function Navbar() {
       </Link>
       <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
         <DropdownMenuTrigger className="flex items-center text-sm font-medium relative hover:text-primary">
-          Xonalar {isOpen ? <ChevronUp className="ml-1 h-4 w-4" /> : <ChevronDown className="ml-1 h-4 w-4" />}
+          Xonalar{" "}
+          {isOpen ? (
+            <ChevronUp className="ml-1 h-4 w-4" />
+          ) : (
+            <ChevronDown className="ml-1 h-4 w-4" />
+          )}
         </DropdownMenuTrigger>
         <DropdownMenuContent>
           <DropdownMenuItem>
@@ -68,9 +78,7 @@ export default function Navbar() {
       <Link
         href="/contact"
         className={`text-sm font-medium relative ${
-          pathname === "/contact"
-            ? "text-primary font-bold"
-            : ""
+          pathname === "/contact" ? "text-primary font-bold" : ""
         } hover:text-primary`}
       >
         Boglanish
@@ -81,9 +89,7 @@ export default function Navbar() {
       <Link
         href="/about"
         className={`text-sm font-medium relative ${
-          pathname === "/about"
-            ? "text-primary font-bold"
-            : ""
+          pathname === "/about" ? "text-primary font-bold" : ""
         } hover:text-primary`}
       >
         Biz haqimizda
@@ -121,7 +127,7 @@ export default function Navbar() {
               <PhoneCall size={18} className="mr-2" />
               <span>+1 (123) 456-7890</span>
             </div>
-            <Sheet>
+            {/* <Sheet>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className="md:hidden">
                   <Menu className="h-6 w-6" />
@@ -138,7 +144,7 @@ export default function Navbar() {
                   </div>
                 </div>
               </SheetContent>
-            </Sheet>
+            </Sheet> */}
           </div>
         </nav>
       </div>
