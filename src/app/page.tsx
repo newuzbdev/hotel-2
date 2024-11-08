@@ -1,7 +1,15 @@
-import HeroSlider from "@/components/HeroSlider";
+import AboutUs from "@/components/AboutUs";
+import SwiperSlider from "@/components/HeroSliderss";
 
-export default function Home() {
-  return <div>
-    <HeroSlider/>
-  </div>;
-}
+const Home: React.FC = () => {
+  return (
+    <>
+      <SwiperSlider />
+        <div className="mx-24 my-10">
+          <AboutUs />
+        </div>
+    </>
+  );
+};
+
+export default Home;
