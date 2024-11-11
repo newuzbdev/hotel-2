@@ -1,5 +1,5 @@
 "use client";
-import { Globe, MapPin, Star } from "lucide-react";
+import { Globe, MapPin, Phone, Star } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "./ui/button";
@@ -14,7 +14,7 @@ export default function Navbar() {
         { href: "/services", label: "Xizmatlar" },
         { href: "/rooms", label: "Xonalar" },
         { href: "/contact", label: "Boglanish" },
-        { href: "/about", label: "Biz haqimizda" }
+        { href: "/about", label: "Biz haqimizda" },
       ].map((link) => (
         <Link
           key={link.href}
@@ -32,15 +32,16 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-white bg-opacity-20 backdrop-blur-md h-[135px]">
       <div className="px-4 py-4 flex items-center justify-between mx-[100px]">
-        <div className="flex items-center gap-4">
-          <span className="text-white bg-blue-500 p-3 rounded-full">
+        <div className="flex items-center gap-4 ">
+          <span className="text-white bg-blue-500 p-3 rounded-full flex gap-1 text-center">
+            <Phone  size={20}/>
             +998(50)005-07-68
           </span>
         </div>
 
         {/* Center */}
         <div className="flex items-center text-gray-300 space-x-10">
-          <p className="text-xl text-white gap-4">s i n c e  2 0 2 4</p>
+          <p className="text-xl text-white gap-4">s i n c e 2 0 2 4</p>
           <Image
             src={"/images/Mboslogo.svg"}
             alt="logo"

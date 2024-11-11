@@ -1,4 +1,4 @@
-  "use client";
+"use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
@@ -86,11 +86,11 @@ export default function HeroSlider() {
 
       {/* Fixed text in the center of the screen */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 max-w-[100%]">
-        <h2 className="font-['Zodiak'] lg:text-[110px] lg:leading-[90px] lg:font-normal tracking-widest sm:text-3xl md:text-7xl">
+        <h2 className="font-['Zodiak'] lg:text-[110px] lg:leading-[90px]  lg:font-normal tracking-widest  sm:text-7xl md:text-7xl">
           Navroz
           <p className="pt-3">Hotel</p>
         </h2>
-        <p className="font-['Zodiak'] text-[20px] leading-[88px] font-medium">
+        <p className="font-['Zodiak'] lg:text-[20px] leading-[88px] font-medium sm:text-lg py-5">
           Sizning sevimli joyingiz. Bizning oilaviy hikoyamiz.
         </p>
       </div>
