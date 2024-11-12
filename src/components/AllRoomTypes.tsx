@@ -12,7 +12,7 @@ export default function AllRoomTypes() {
     {
       title: "Ikki kishilik standart",
       image: "/images/rooms/navrozstandart2.jpg",
-      slug: "ikki-kishilik-standart",
+      slug: "standart2room",
     },
     {
       title: "Uch kishilik standart",

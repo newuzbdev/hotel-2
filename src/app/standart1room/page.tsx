@@ -85,14 +85,14 @@ export default function StandartRoom() {
             <div className="absolute inset-0 bg-black/20" />
           </motion.div>
         </AnimatePresence>
-
-        {/* Fixed text in the center of the screen */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 max-w-[100%]">
-          <h2 className="font-['Zodiak'] lg:text-[80px] lg:leading-[90px]  lg:font-normal tracking-widest  sm:text-7xl md:text-7xl">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 max-w-[100%] px-6 sm:px-12">
+          <h2 className="font-['Zodiak'] text-4xl sm:text-6xl md:text-7xl lg:text-[90px] lg:leading-[80px] font-normal tracking-widest">
             Standart 1 kishilik
-            <p className="pt-3">Xona</p>
+            <p className="pt-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
+            Xona
+            </p>
           </h2>
-          <p className="font-['Zodiak'] lg:text-[20px] leading-[88px] font-medium sm:text-lg py-5">
+          <p className="font-['Zodiak'] text-lg sm:text-xl md:text-2xl lg:text-[20px] leading-8 sm:leading-10 font-medium py-5">
             Sizning sevimli joyingiz. Bizning oilaviy hikoyamiz.
           </p>
         </div>
