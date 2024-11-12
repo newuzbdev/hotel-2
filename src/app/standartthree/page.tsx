@@ -3,21 +3,21 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-const AllRoomTypes = dynamic(() => import("@/components/AllRoomTypes"));
+const StandardRoom3 = dynamic(() => import("@/components/StandartRoom3"));
 
 const slides = [
   {
-    image: "/images/rooms/navrozviproom.jpg",
+    image: "/images/rooms/navrozstandart3.jpg",
   },
   {
-    image: "/images/rooms/navrozvip2rooms.jpg",
+    image: "/images/rooms/navrozstandart3mirror.jpg",
   },
   {
-    image: "/images/rooms/navrozdeluxe.jpg",
+    image: "/images/rooms/navrozstandart3all.jpg",
   },
 ];
 
-export default function Rooms() {
+export default function StandartRoom2() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [direction, setDirection] = useState(0);
 
@@ -32,6 +32,8 @@ export default function Rooms() {
     setDirection(1);
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
+
+
 
   const slideVariants = {
     enter: (direction:number) => ({
@@ -81,16 +83,19 @@ export default function Rooms() {
           </motion.div>
         </AnimatePresence>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 max-w-[100%] px-6 sm:px-12">
-          <h2 className="font-['Zodiak'] text-4xl sm:text-6xl md:text-7xl lg:text-[110px] lg:leading-[90px] font-normal tracking-widest">
-            Xonalar
+          <h2 className="font-['Zodiak'] text-4xl sm:text-6xl md:text-7xl lg:text-[90px] lg:leading-[80px] font-normal tracking-widest">
+            Standart 3 kishilik
+            <p className="pt-3 text-lg sm:text-xl md:text-2xl lg:text-5xl font-[Zodiak]">
+            Xona
+            </p>
           </h2>
           <p className="font-['Zodiak'] text-lg sm:text-xl md:text-2xl lg:text-[20px] leading-8 sm:leading-10 font-medium py-5">
             Sizning sevimli joyingiz. Bizning oilaviy hikoyamiz.
           </p>
         </div>
       </div>
-      <div className="mt-10">
-        <AllRoomTypes />
+      <div>
+        <StandardRoom3 />
       </div>
     </>
   );

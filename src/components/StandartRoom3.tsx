@@ -21,11 +21,11 @@ import Link from "next/link";
 export default function StandardRoom2() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const images = [
-    "/images/rooms/navrozstandart2.jpg",
-    "/images/rooms/navrozstandart2bath.jpg",
-    "/images/rooms/navrozstandart2all.jpg",
-    "/images/rooms/navrozstandart2.jpg",
-    "/images/rooms/navrozstandart2.jpg",
+    "/images/rooms/navrozstandart3.jpg",
+    "/images/rooms/navrozstandart3bath.jpg",
+    "/images/rooms/navrozstandart3all.jpg",
+    "/images/rooms/navrozstandart3all.jpg",
+    "/images/rooms/navrozstandart3mirror.jpg",
   ];
 
   const amenities = {
@@ -77,7 +77,7 @@ export default function StandardRoom2() {
     <div className="mx-[120px] pt-10">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <h1 className="text-[32px]">Standart ikki kishilik</h1>
+          <h1 className="text-[32px]">Standart uch kishilik</h1>
         </div>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-12">

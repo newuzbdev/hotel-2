@@ -14,7 +14,9 @@ import {
   Scissors,
   Car,
   Wifi,
+  ChevronRight,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function StandardRoom1() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -120,7 +122,14 @@ export default function StandardRoom1() {
               bir kecha
             </span>
           </p>
-          <Button className="text-black mt-4 sm:mt-0">Band qilish</Button>
+          <Link href={"/booking"}>
+          <Button className="bg-white text-black transition-all duration-300 ease-out border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-28  h-12 overflow-hidden px-10">
+            <span className="absolute transition-opacity duration-500 ease-out opacity-100 group-hover:opacity-0">
+              Band qilish
+            </span>
+            <ChevronRight className="absolute transform transition-all duration-500 ease-out opacity-0 group-hover:opacity-100 translate-x-5 group-hover:translate-x-0" />
+          </Button>
+        </Link>
         </div>
 
         <Dialog

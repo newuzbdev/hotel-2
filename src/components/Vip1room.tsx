@@ -14,18 +14,20 @@ import {
   Scissors,
   Car,
   Wifi,
+  Milk,
   ChevronRight,
+  ShowerHead,
 } from "lucide-react";
 import Link from "next/link";
 
-export default function StandardRoom2() {
+export default function Vip2Room() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const images = [
-    "/images/rooms/navrozstandart2.jpg",
-    "/images/rooms/navrozstandart2bath.jpg",
-    "/images/rooms/navrozstandart2all.jpg",
-    "/images/rooms/navrozstandart2.jpg",
-    "/images/rooms/navrozstandart2.jpg",
+    "/images/rooms/navrozvip1.jpg",
+    "/images/rooms/navrozvip2bath.jpg",
+    "/images/rooms/navrozvipall.jpg",
+    "/images/rooms/navrozvip1.jpg",
+    "/images/rooms/navrozvipbath.jpg",
   ];
 
   const amenities = {
@@ -70,6 +72,15 @@ export default function StandardRoom2() {
         { icon: <Car size={20} />, text: "Taqsi chaqirib berish" },
         { icon: <Wifi size={20} />, text: "Wi-fi" },
       ],
+      [
+        { icon: <Scissors size={20} />, text: "Shkaf" },
+        { icon: <Milk size={20} />, text: "Ichimlik suvi" },
+        { icon: <Wifi size={20} />, text: "Xalat" },
+      ],
+      [
+        { icon: <ShowerHead size={20} />, text: "Tahorat olish" },
+        { icon: <Coffee size={20} />, text: "Coffee tea" },
+      ],
     ],
   };
 
@@ -77,7 +88,7 @@ export default function StandardRoom2() {
     <div className="mx-[120px] pt-10">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-          <h1 className="text-[32px]">Standart ikki kishilik</h1>
+          <h1 className="text-[32px]">Vip</h1>
         </div>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-12">

@@ -1,23 +1,24 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { ChevronRight } from "lucide-react";
 
 export default function AllRoomTypes() {
   const rooms = [
     {
       title: "Bir kishilik standart",
       image: "/images/rooms/navrozstandart1.jpg",
-      slug: "standart1room",
+      slug: "standartone",
     },
     {
       title: "Ikki kishilik standart",
       image: "/images/rooms/navrozstandart2.jpg",
-      slug: "standart2room",
+      slug: "standartwo",
     },
     {
       title: "Uch kishilik standart",
       image: "/images/rooms/navrozstandart3.jpg",
-      slug: "uch-kishilik-standart",
+      slug: "standartthree",
     },
     {
       title: "Deluxe",
@@ -26,9 +27,15 @@ export default function AllRoomTypes() {
     },
     { title: "Vip", image: "/images/rooms/navrozviproom.jpg", slug: "vip" },
     {
+      title: "Vip bir kishilik",
+      image: "/images/rooms/navrozvip1.jpg",
+      slug: "vipone",
+    },
+
+    {
       title: "Vip ikki kishilik",
       image: "/images/rooms/navrozvip2rooms.jpg",
-      slug: "vip-ikki-kishilik",
+      slug: "viptwo",
     },
   ];
 
@@ -67,8 +74,11 @@ export default function AllRoomTypes() {
               </Link>
               {/* Ko'proq Button as a Link */}
               <Link href={`/${room.slug}`}>
-                <Button className="mt-4 bg-white text-black hover:bg-white/90 px-6 py-5">
-                  Ko'proq
+                <Button className="bg-white text-black transition-all duration-300 ease-out border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-28  h-12 overflow-hidden px-10">
+                  <span className="absolute transition-opacity duration-500 ease-out opacity-100 group-hover:opacity-0">
+                    Band qilish
+                  </span>
+                  <ChevronRight className="absolute transform transition-all duration-500 ease-out opacity-0 group-hover:opacity-100 translate-x-5 group-hover:translate-x-0" />
                 </Button>
               </Link>
             </div>

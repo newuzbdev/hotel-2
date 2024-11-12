@@ -31,9 +31,8 @@ export default function HeroSlider() {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
-
   const slideVariants = {
-    enter: (direction:number) => ({
+    enter: (direction: number) => ({
       x: direction > 0 ? 1000 : -1000,
       opacity: 0,
     }),
@@ -46,7 +45,7 @@ export default function HeroSlider() {
         ease: "easeInOut",
       },
     },
-    exit: (direction:number) => ({
+    exit: (direction: number) => ({
       zIndex: 0,
       x: direction < 0 ? 1000 : -1000,
       opacity: 1,
@@ -80,17 +79,54 @@ export default function HeroSlider() {
         </motion.div>
       </AnimatePresence>
 
-      {/* Fixed text in the center of the screen */}
+      {/* Fixed text and booking form in the center */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 max-w-[100%] px-6 sm:px-12">
-        <h2 className="font-['Zodiak'] text-4xl sm:text-6xl md:text-7xl lg:text-[110px] lg:leading-[90px] font-normal tracking-widest">
-          Navroz
-          <p className="pt-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
-            Hotel
-          </p>
+        <h2 className="font-['Zodiak'] text-4xl sm:text-6xl md:text-7xl lg:text-[110px] lg:leading-[90px] font-normal tracking-widest mb-8">
+          Xona band qilish
         </h2>
-        <p className="font-['Zodiak'] text-lg sm:text-xl md:text-2xl lg:text-[20px] leading-8 sm:leading-10 font-medium py-5">
-          Sizning sevimli joyingiz. Bizning oilaviy hikoyamiz.
-        </p>
+        
+        <div className="bg-gray-200/80 p-6 rounded-lg max-w-md w-full">
+          <form className="space-y-4">
+            <div className="flex flex-col space-y-2">
+              <input
+                type="date"
+                className="p-2 rounded text-black"
+                placeholder="Check-in date"
+              />
+            
+            
+              <select className="p-2 rounded text-black">
+                <option value="">Select Room Type</option>
+                <option value="standard">Standard Room</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Suite</option>
+              </select>
+            </div>
+            
+            <div className="flex gap-4">
+              <select className="p-2 rounded text-black flex-1">
+                <option value="">Adults</option>
+                {[1,2,3,4].map(num => (
+                  <option key={num} value={num}>{num}</option>
+                ))}
+              </select>
+              
+              <select className="p-2 rounded text-black flex-1">
+                <option value="">Children</option>
+                {[0,1,2,3].map(num => (
+                  <option key={num} value={num}>{num}</option>
+                ))}
+              </select>
+            </div>
+            
+            <button
+              type="submit"
+              className="w-full bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition-colors"
+            >
+              Book Now
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

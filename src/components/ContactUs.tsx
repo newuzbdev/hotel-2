@@ -19,7 +19,7 @@ import Image from "next/image";
 
 export default function ContactUs() {
   return (
-    <div className="my-10 p-4">
+    <div className="my-10 p-4" id="contactus">
       <div className="flex gap-10 items-center my-3 justify-center ">
         <h1
           className="text-[48px] leading-[56px] font-normal font-[Zodiak]"
