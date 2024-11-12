@@ -18,14 +18,14 @@ export default function Home() {
       <div className="mx-24 my-10">
         <AboutUs />
         <AboutUsHoverEffects />
-        <Gallery />
       </div>
+      <Gallery />
       <SecondGallery />
       <div className="mx-24 my-10">
-        <Roomstypes />  
+        <Roomstypes />
         <Faq />
-        <HotelLocation/>
-        <ContactUs/>
+        <HotelLocation />
+        <ContactUs />
       </div>
     </>
   );

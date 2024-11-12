@@ -16,7 +16,7 @@ export default function HotelLocation() {
     },
     {
       id: 2,
-      imageUrl: "/images/location/navrozlocation.jpg",
+      imageUrl: "/images/location/navrozstreet1.jpg",
       featured: true,
     },
     {
@@ -25,14 +25,10 @@ export default function HotelLocation() {
     },
     {
       id: 4,
-      imageUrl: "/images/location/navrozlocation.jpg",
+      imageUrl: "/images/location/navrozstreet2.jpg",
     },
     {
       id: 5,
-      imageUrl: "/images/location/navrozlocation.jpg",
-    },
-    {
-      id: 6,
       imageUrl: "/images/location/navrozlocation.jpg",
     },
   ];
@@ -57,7 +53,7 @@ export default function HotelLocation() {
                     src={room.imageUrl}
                     alt={"Hotellocation"}
                     fill
-                    className="object-cover transition-transform group-hover:scale-105"
+                    className="object-cover transition-transform group-hover:scale-125 duration-700"
                   />
                 </CardContent>
               </Card>
@@ -65,7 +61,7 @@ export default function HotelLocation() {
         </div>
 
         {/* Standard rooms */}
-        <div className="grid md:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {rooms
             .filter((room) => !room.featured)
             .map((room) => (
@@ -75,7 +71,7 @@ export default function HotelLocation() {
                     src={room.imageUrl}
                     alt={"hotellocation"}
                     fill
-                    className="object-cover transition-transform group-hover:scale-105"
+                    className="object-cover transition-transform group-hover:scale-125 duration-700"
                   />
                 </CardContent>
               </Card>

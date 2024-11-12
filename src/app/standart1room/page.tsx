@@ -2,21 +2,22 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import AllRoomTypes from "@/components/AllRoomTypes";
+import dynamic from "next/dynamic";
+const StandardRoom1 = dynamic(() => import("@/components/StandartRoom1"));
 
 const slides = [
   {
-    image: "/images/rooms/navrozviproom.jpg",
+    image: "/images/rooms/navrozstandart1.jpg",
   },
   {
-    image: "/images/rooms/navrozvip2rooms.jpg",
+    image: "/images/rooms/navrozstandart1bath.jpg",
   },
   {
-    image: "/images/rooms/navrozdeluxe.jpg",
+    image: "/images/rooms/navorzstandart1roommirror.jpg",
   },
 ];
 
-export default function Rooms() {
+export default function StandartRoom() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [direction, setDirection] = useState(0);
 
@@ -87,16 +88,17 @@ export default function Rooms() {
 
         {/* Fixed text in the center of the screen */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 max-w-[100%]">
-          <h2 className="font-['Zodiak'] lg:text-[110px] lg:leading-[90px]  lg:font-normal tracking-widest  sm:text-7xl md:text-7xl">
-            Xonalar
+          <h2 className="font-['Zodiak'] lg:text-[80px] lg:leading-[90px]  lg:font-normal tracking-widest  sm:text-7xl md:text-7xl">
+            Standart 1 kishilik
+            <p className="pt-3">Xona</p>
           </h2>
           <p className="font-['Zodiak'] lg:text-[20px] leading-[88px] font-medium sm:text-lg py-5">
             Sizning sevimli joyingiz. Bizning oilaviy hikoyamiz.
           </p>
         </div>
       </div>
-      <div className="mt-10">
-        <AllRoomTypes />
+      <div>
+        <StandardRoom1 />
       </div>
     </>
   );

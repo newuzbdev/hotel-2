@@ -64,7 +64,7 @@ export default function AboutUs() {
   };
 
   return (
-    <div className="relative w-full  overflow-hidden">
+    <div className="relative w-full  overflow-hidden" id="aboutus">
       <div className="flex flex-col items-center text-center space-y-4 p-8">
         <Image
           src={"/images/aboutus1.svg"}
@@ -112,7 +112,6 @@ export default function AboutUs() {
               src={slides[currentSlide].image}
               alt="Navroz Hotel"
               fill
-              priority
               className="object-cover"
             />
             <div className="absolute inset-0 bg-black/20" />

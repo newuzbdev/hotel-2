@@ -5,13 +5,13 @@ import Image from "next/image";
 
 const slides = [
   {
-    image: "/images/navrozslider.jpg",
-  },
-  {
-    image: "/images/navrozslider2.jpg",
+    image: "/images/location/navrozmainlocation.jpg",
   },
   {
     image: "/images/navrozslider3.jpg",
+  },
+  {
+    image: "/images/navrozslider.jpg",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function HeroSlider() {
   };
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-screen overflow-hidden" id="home">
       <AnimatePresence initial={false} custom={direction} mode="popLayout">
         <motion.div
           key={currentSlide}

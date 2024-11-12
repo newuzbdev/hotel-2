@@ -38,13 +38,14 @@ export default function Roomstypes() {
       title: "Standart ikki kishilik",
       imageUrl: "/images/rooms/navrozstandart2.jpg",
     },
-
   ];
 
   return (
     <div className=" mx-auto py-8">
-      <h1 className="text-[48px] font-normal text-center mb-8 font-[Zodiak] mt-10"
-      style={{color: "rgba(19, 99, 222, 1)"}}>
+      <h1
+        className="text-[48px] font-normal text-center mb-8 font-[Zodiak] mt-10"
+        style={{ color: "rgba(19, 99, 222, 1)" }}
+      >
         Xona tariflari
       </h1>
       <div className="grid gap-6">
@@ -59,7 +60,7 @@ export default function Roomstypes() {
                     src={room.imageUrl}
                     alt={room.title}
                     fill
-                    className="object-cover transition-transform group-hover:scale-105"
+                    className="object-cover transition-transform duration-700 group-hover:scale-125"
                   />
                   <div className="absolute inset-0">
                     <div className="absolute bottom-4 left-4">
@@ -69,11 +70,6 @@ export default function Roomstypes() {
                       >
                         {room.title}
                       </h3>
-
-                      {/* <h3 className="text-xl font-semibold text-white bg-gray-500">{room.title}</h3> */}
-                      {room.size && (
-                        <p className="text-sm text-white/80">{room.size}</p>
-                      )}
                     </div>
                   </div>
                 </CardContent>
@@ -92,7 +88,7 @@ export default function Roomstypes() {
                     src={room.imageUrl}
                     alt={room.title}
                     fill
-                    className="object-cover transition-transform group-hover:scale-105"
+                    className="object-cover transition-transform group-hover:scale-125 duration-700"
                   />
                   <div className="absolute inset-0">
                     <div className="absolute bottom-4 left-4">
