@@ -8,11 +8,11 @@ import {
 export default function Faq() {
   return (
     <>
-      <div className="flex justify-center mt-20">
+      <div className="flex justify-center mt-20 ">
         <div className="flex flex-col items-center justify-end">
           <div className="flex items-center my-3">
             <h1
-              className="text-[48px] leading-[56px] font-normal"
+              className="text-[28px] leading-[56px] font-normal sm:2xl md:2xl: lg:text-4xl"
               style={{
                 fontFamily: "Zodiak",
                 textAlign: "left",
@@ -25,7 +25,11 @@ export default function Faq() {
         </div>
       </div>
       <>
-        <Accordion type="single" collapsible className="w-full space-y-4 pt-5">
+        <Accordion
+          type="single"
+          collapsible
+          className=" space-y-4 pt-5 mx-4 sm:mx-4 md:mx-4 lg:mx-24"
+        >
           <AccordionItem
             value="item-1"
             className="border rounded-lg px-6 py-2 shadow-sm"

@@ -84,7 +84,7 @@ export default function Navbar() {
       <div className="flex flex-wrap items-center justify-between px-4 py-3 md:py-2 mx-[100]">
         {/* Left Side */}
         <div className="flex items-center gap-2 md:gap-4">
-          <span className="text-white bg-blue-500 p-2 md:p-3 rounded-full flex items-center gap-1">
+          <span className="text-white bg-blue-500 p-2 md:p-3 rounded-full md:flex items-center gap-1 hidden">
             <Phone size={20} />
             <span className="hidden md:block">+998(50)005-07-68</span>
           </span>
@@ -120,25 +120,24 @@ export default function Navbar() {
             </DropdownMenuContent>
           </DropdownMenu>
           <Link href={"/booking"}>
-            <Button className="text-white bg-blue-500 px-3 py-1 md:px-5 md:py-5 rounded-full text-[14px] md:text-[16px]">
+            <Button className="text-white bg-blue-500 px-3 py-1 md:px-5 md:py-5 rounded-full text-[14px] md:text-[16px] hidden md:flex">
               Band qilish
             </Button>
           </Link>
           <Sheet>
             <SheetTrigger asChild>
-              <Menu size={30} className="text-white md:hidden cursor-pointer" />
+              <Menu size={32} className="text-white md:hidden cursor-pointer absolute right-0 top-0" />
             </SheetTrigger>
             <SheetContent className="bg-white bg-opacity-90 text-gray-900 p-4">
               <SheetHeader>
                 <SheetTitle className="text-xl font-bold">
-                  Navigatsiya
+                  Navroz Hotel
                 </SheetTitle>
               </SheetHeader>
               <div className="mt-4 space-y-4">
                 <nav className="flex flex-col items-start gap-4">
                   {[
                     { href: "/", label: "Asosiy" },
-                    { href: "/services", label: "Xizmatlar" },
                     { href: "/rooms", label: "Xonalar" },
                     { href: "/contact", label: "Bog'lanish" },
                     {
@@ -180,8 +179,8 @@ export default function Navbar() {
                         <DropdownMenuItem>Russian</DropdownMenuItem>
                         <DropdownMenuItem>Uzbek</DropdownMenuItem>
                       </DropdownMenuContent>
+                    <span>Til o'zgartirish</span>
                     </DropdownMenu>
-                    <span className="text-gray-900">Dunyo bo'ylab xizmat</span>
                   </div>
                 </div>
               </div>

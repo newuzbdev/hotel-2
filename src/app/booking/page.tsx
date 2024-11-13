@@ -144,7 +144,7 @@ export default function HeroSlider() {
             </div>
 
             <div className="flex items-center justify-center">
-              <Button className="bg-white text-black transition-all duration-300 ease-out border-black hover:border-white border rounded-full font-[Satoshi] flex items-center justify-center group relative w-28  h-12 overflow-hidden px-10 hover:bg-blue-400">
+              <Button className="bg-white text-black transition-all duration-300 ease-out border-black hover:border-white border rounded-full font-[Satoshi] flex items-center justify-center group relative w-32  h-12 overflow-hidden px-10 hover:bg-blue-400">
                 <span className="absolute transition-opacity duration-500 ease-out opacity-100 group-hover:opacity-0">
                   Band qilish
                 </span>

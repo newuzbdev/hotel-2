@@ -15,13 +15,13 @@ export default function Home() {
   return (
     <>
       <HeroSlider />
-      <div className="mx-24 my-10">
+      <div className="my-10">
         <AboutUs />
         <AboutUsHoverEffects />
       </div>
       <Gallery />
       <SecondGallery />
-      <div className="mx-24 my-10">
+      <div className=" my-10">
         <Roomstypes />
         <Faq />
         <HotelLocation />

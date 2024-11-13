@@ -86,28 +86,31 @@ export default function VipRoom() {
   };
 
   return (
-    <div className="mx-[120px] pt-10">
+    <div className="mx-4 sm:mx-8 md:mx-[120px] pt-10">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <h1 className="text-[32px]">Vip</h1>
         </div>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-12">
-          <div className="md:col-span-6 grid grid-cols-2 gap-4">
-            {images.slice(1).map((image, index) => (
-              <div
-                key={index}
-                className="relative h-[300px] overflow-hidden cursor-pointer"
-                onClick={() => setSelectedImage(image)}
-              >
-                <Image
-                  src={image}
-                  alt={`Room view ${index + 1}`}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ))}
+          {/* Left: Smaller Images */}
+          <div className="md:col-span-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {images.slice(1).map((image, index) => (
+                <div
+                  key={index}
+                  className="relative h-[300px] overflow-hidden cursor-pointer"
+                  onClick={() => setSelectedImage(image)}
+                >
+                  <Image
+                    src={image}
+                    alt={`Room view ${index + 1}`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Right: Main Image */}
@@ -125,7 +128,7 @@ export default function VipRoom() {
         {/* Price and Button Section */}
         <div className="flex flex-col sm:flex-row justify-between items-center mt-4">
           <p
-            className="font-medium text-sm sm:text-3xl"
+            className="font-medium text-3xl sm:text-3xl"
             style={{ color: "rgba(19, 99, 222, 1)" }}
           >
             660 000 000 so'm{" "}
@@ -134,13 +137,13 @@ export default function VipRoom() {
             </span>
           </p>
           <Link href={"/booking"}>
-          <Button className="bg-white text-black transition-all duration-300 ease-out border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-28  h-12 overflow-hidden px-10">
-            <span className="absolute transition-opacity duration-500 ease-out opacity-100 group-hover:opacity-0">
-              Band qilish
-            </span>
-            <ChevronRight className="absolute transform transition-all duration-500 ease-out opacity-0 group-hover:opacity-100 translate-x-5 group-hover:translate-x-0" />
-          </Button>
-        </Link>
+            <Button className="bg-white text-black transition-all duration-300 ease-out hover:border-white hover:bg-blue-500 border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-full sm:w-32 h-12 overflow-hidden px-10">
+              <span className="absolute transition-opacity duration-500 ease-out opacity-100 group-hover:opacity-0">
+                Band qilish
+              </span>
+              <ChevronRight className="absolute transform transition-all duration-500 ease-out opacity-0 group-hover:opacity-100 translate-x-5 group-hover:translate-x-0 text-white" />
+            </Button>
+          </Link>
         </div>
 
         <Dialog
@@ -148,7 +151,7 @@ export default function VipRoom() {
           onOpenChange={() => setSelectedImage(null)}
         >
           <DialogTitle></DialogTitle>
-          <DialogContent className="max-w-[69vw]">
+          <DialogContent className="max-w-[90vw] sm:max-w-[69vw]">
             {selectedImage && (
               <div className="relative w-full h-[80vh]">
                 <Image
@@ -167,7 +170,7 @@ export default function VipRoom() {
           <h3 className="text-3xl font-medium">
             Sizni qanda kulayliklar kutyabdi
           </h3>
-          <div className="flex items-center justify-start gap-20 py-4 md:flex-row flex-col">
+          <div className="flex items-center justify-start gap-20 py-4 md:flex-row flex-col pr-20">
             {amenities.roomFeatures.map((group, groupIndex) => (
               <ul key={groupIndex} className="space-y-2">
                 {group.map((item, index) => (

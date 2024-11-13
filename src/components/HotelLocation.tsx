@@ -34,7 +34,7 @@ export default function HotelLocation() {
   ];
 
   return (
-    <div className=" mx-auto py-8">
+    <div className="mx-4 sm:mx-4 md:mx-4 lg:mx-24 py-8">
       <h1
         className="text-[48px] font-normal text-center mb-8 font-[Zodiak] mt-10"
         style={{ color: "rgba(19, 99, 222, 1)" }}

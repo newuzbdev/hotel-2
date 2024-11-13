@@ -65,7 +65,7 @@ export default function Roomstypes() {
       </h1>
 
       {/* First Two Rooms in 2 Columns */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mx-4 sm:mx-4 md:mx-4 lg:mx-24">
         {rooms.slice(0, 2).map((room) => (
             <Link href={`/${room.slug}`} key={room.id}>
               <div className="group overflow-hidden cursor-pointer">
@@ -93,7 +93,7 @@ export default function Roomstypes() {
       </div>
 
       {/* Remaining Rooms in 4 Columns */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8 mx-4 sm:mx-4 md:mx-4 lg:mx-24">
         {rooms.slice(2).map((room) => (
             <Link href={`/${room.slug}`} key={room.id}>
               <div className="group overflow-hidden cursor-pointer">

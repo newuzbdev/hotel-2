@@ -18,7 +18,7 @@ export default function Gallery() {
         />
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 mx-4 sm:mx-4 md:mx-4 lg:mx-24">
         {[
           { title: "Xonalar", image: "/images/rooms/navrozviproom.jpg" },
           { title: "Bassen", image: "/images/poolnavroz.jpg" },
@@ -46,7 +46,7 @@ export default function Gallery() {
       {/* Button */}
       <div className="flex justify-center mt-4">
         <Link href={"/booking"}>
-          <Button className="bg-white text-black transition-all duration-300 ease-out hover:border-white hover:bg-blue-500 border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-28  h-12 overflow-hidden px-10">
+          <Button className="bg-white text-black transition-all duration-300 ease-out hover:border-white hover:bg-blue-500 border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-32  h-12 overflow-hidden px-10">
             <span className="absolute transition-opacity duration-500 ease-out opacity-100 group-hover:opacity-0">
               Band qilish
             </span>

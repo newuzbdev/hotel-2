@@ -82,9 +82,9 @@ export default function HeroSlider() {
 
       {/* Fixed text in the center of the screen */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 max-w-[100%] px-6 sm:px-12">
-        <h2 className="font-['Zodiak'] text-4xl sm:text-6xl md:text-7xl lg:text-[100px] lg:leading-[90px] font-normal tracking-widest">
+        <h2 className="font-['Zodiak'] text-6xl sm:text-6xl md:text-7xl lg:text-[100px] lg:leading-[90px] font-normal tracking-widest">
           NAVROZ
-          <p className="pt-3 sm:text-6xl md:text-7xl lg:text-[100px]">
+          <p className="pt-3 text-6xl sm:text-6xl md:text-7xl lg:text-[100px]">
             Hotel
           </p>
         </h2>

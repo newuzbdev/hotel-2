@@ -33,13 +33,8 @@ export default function StandartRoom() {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
-  const prevSlide = () => {
-    setDirection(-1);
-    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  };
-
   const slideVariants = {
-    enter: (direction) => ({
+    enter: (direction:number) => ({
       x: direction > 0 ? 1000 : -1000,
       opacity: 0,
     }),
@@ -52,7 +47,7 @@ export default function StandartRoom() {
         ease: "easeInOut",
       },
     },
-    exit: (direction) => ({
+    exit: (direction:number) => ({
       zIndex: 0,
       x: direction < 0 ? 1000 : -1000,
       opacity: 1,
@@ -87,9 +82,9 @@ export default function StandartRoom() {
         </AnimatePresence>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 max-w-[100%] px-6 sm:px-12">
           <h2 className="font-['Zodiak'] text-4xl sm:text-6xl md:text-7xl lg:text-[90px] lg:leading-[80px] font-normal tracking-widest">
-            Standart 1 kishilik
-            <p className="pt-3 text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold">
-            Xona
+            Bir kishilik standart
+            <p className="pt-6 text-4xl sm:text-4xl md:text-4xl lg:text-[90px]">
+              Xona
             </p>
           </h2>
           <p className="font-['Zodiak'] text-lg sm:text-xl md:text-2xl lg:text-[20px] leading-8 sm:leading-10 font-medium py-5">

@@ -60,7 +60,7 @@ export default function Rooms() {
 
   return (
     <>
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full h-screen overflow-hidden ">
         <AnimatePresence initial={false} custom={direction} mode="popLayout">
           <motion.div
             key={currentSlide}
@@ -81,7 +81,7 @@ export default function Rooms() {
           </motion.div>
         </AnimatePresence>
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 max-w-[100%] px-6 sm:px-12">
-          <h2 className="font-['Zodiak'] text-4xl sm:text-6xl md:text-7xl lg:text-[110px] lg:leading-[90px] font-normal tracking-widest">
+          <h2 className="font-['Zodiak'] text-6xl sm:text-6xl md:text-7xl lg:text-[110px] lg:leading-[90px] font-normal tracking-widest">
             Xonalar
           </h2>
           <p className="font-['Zodiak'] text-lg sm:text-xl md:text-2xl lg:text-[20px] leading-8 sm:leading-10 font-medium py-5">

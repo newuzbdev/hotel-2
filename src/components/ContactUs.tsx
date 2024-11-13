@@ -1,29 +1,15 @@
-"use client";
-// import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
+import { Card, CardContent } from "./ui/card";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
+import { Button } from "./ui/button";
 import { ChevronRight } from "lucide-react";
-
-// const center = {
-//   lat: 41.311081,
-//   lng: 69.240562,
-// };
-
-// const mapContainerStyle = {
-//   width: "100%",
-//   height: "400px",
-// };
-
 export default function ContactUs() {
   return (
-    <div className="my-10 p-4" id="contactus">
+    <div className="my-10 mx-4 sm:mx-4 md:mx-4 lg:mx-24 p-4" id="contactus">
       <div className="flex gap-10 items-center my-3 justify-center ">
         <h1
-          className="text-[48px] leading-[56px] font-normal font-[Zodiak]"
+          className="text-[28px] leading-[56px] font-normal font-[Zodiak] sm:2xl md:2xl lg:text-6xl"
           style={{ color: "rgba(19, 99, 222, 1)" }}
         >
           Biz Bilan Bog'lanish
@@ -37,17 +23,6 @@ export default function ContactUs() {
       <div className="grid md:grid-cols-2 gap-8">
         <Card className="w-full">
           <CardContent className="w-full h-[423px]">
-            {/* <LoadScript
-              googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
-            >
-              <GoogleMap
-                mapContainerStyle={mapContainerStyle}
-                center={center}
-                zoom={15}
-              >
-                <Marker position={center} />
-              </GoogleMap>
-            </LoadScript> */}
           </CardContent>
         </Card>
 
@@ -102,8 +77,25 @@ export default function ContactUs() {
           </CardContent>
         </>
       </div>
-      <div className="flex items-end justify-end py-4">
-        <Button className="bg-white text-black transition-all duration-300 ease-out hover:border-white hover:bg-blue-500 border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-28  h-12 overflow-hidden px-10">
+      <div className="flex flex-col-reverse md:flex-row items-center justify-end gap-4 py-4 px-6 sm:pt-10 md:pt-10 lg:pt-10">
+        <div className="flex items-center gap-2 p-3 border rounded-md shadow-md w-full md:max-w-md md:pt-4 order-2 md:order-1">
+          <input
+            type="checkbox"
+            className="w-6 h-6 border-gray-300 rounded text-blue-600 focus:ring-blue-500"
+          />
+          <span className="text-gray-700">Men robot emasman</span>
+          <div className="ml-auto flex items-center">
+            <Image
+              src="https://www.gstatic.com/recaptcha/api2/logo_48.png"
+              alt="captcha"
+              width={20}
+              height={20}
+              className="w-10 h-10"
+            />
+            <span className="ml-1 text-gray-400 text-xs">reCAPTCHA</span>
+          </div>
+        </div>
+        <Button className="bg-white text-black transition-all duration-300 ease-out hover:border-white hover:bg-blue-500 border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-32 h-12 overflow-hidden px-10 order-1 md:order-2">
           <span className="absolute transition-opacity duration-500 ease-out opacity-100 group-hover:opacity-0">
             Yuborish
           </span>
