@@ -16,14 +16,6 @@ export default function Footer() {
             </h2>
           </div>
           <div>
-            <h2
-              className="mb-6 text-sm font-semibold uppercase text-blue-600"
-              id="#"
-            >
-              Xizmatlar
-            </h2>
-          </div>
-          <div>
             <Link href={"/rooms"}>
               {" "}
               <h2 className="mb-6 text-sm font-semibold uppercase text-blue-600">
