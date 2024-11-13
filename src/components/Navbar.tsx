@@ -190,7 +190,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Desktop Nav Links */}
       <div className="hidden md:flex items-center justify-center border-t border-b w-full h-12">
         <NavLinks />
       </div>

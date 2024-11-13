@@ -47,7 +47,7 @@ export default function HotelLocation() {
           {rooms
             .filter((room) => room.featured)
             .map((room) => (
-              <Card key={room.id} className="group overflow-hidden">
+              <div key={room.id} className="group overflow-hidden">
                 <CardContent className="p-0 relative aspect-[4/3]">
                   <Image
                     src={room.imageUrl}
@@ -56,7 +56,7 @@ export default function HotelLocation() {
                     className="object-cover transition-transform group-hover:scale-125 duration-700"
                   />
                 </CardContent>
-              </Card>
+              </div>
             ))}
         </div>
 
@@ -65,7 +65,7 @@ export default function HotelLocation() {
           {rooms
             .filter((room) => !room.featured)
             .map((room) => (
-              <Card key={room.id} className="group overflow-hidden">
+              <div key={room.id} className="group overflow-hidden">
                 <CardContent className="p-0 relative aspect-[4/3]">
                   <Image
                     src={room.imageUrl}
@@ -74,7 +74,7 @@ export default function HotelLocation() {
                     className="object-cover transition-transform group-hover:scale-125 duration-700"
                   />
                 </CardContent>
-              </Card>
+              </div>
             ))}
         </div>
       </div>

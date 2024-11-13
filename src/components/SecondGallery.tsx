@@ -35,18 +35,16 @@ export default function SecondGallery() {
               {item.text}
             </h1>
           </div>
-          {/* Button for the second item */}
           {item.button && (
             <div className="absolute bottom-4 sm:bottom-8 flex items-center justify-center w-full">
-              <Button className="bg-white text-black transition-all duration-300 ease-out border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-28  h-12 overflow-hidden px-10">
+              <Button className="bg-white text-black transition-all duration-300 ease-out hover:border-white hover:bg-blue-500 border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-28  h-12 overflow-hidden px-10">
                 <span className="absolute transition-opacity duration-500 ease-out opacity-100 group-hover:opacity-0">
                   Band qilish
                 </span>
-                <ChevronRight className="absolute transform transition-all duration-500 ease-out opacity-0 group-hover:opacity-100 translate-x-5 group-hover:translate-x-0" />
+                <ChevronRight className="absolute transform transition-all duration-500 ease-out opacity-0 group-hover:opacity-100 translate-x-5 group-hover:translate-x-0 text-white" />
               </Button>
             </div>
           )}
-          {/* Decoration for the second image */}
           {index === 1 && (
             <Image
               src="/images/part3.svg"

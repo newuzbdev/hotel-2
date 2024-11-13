@@ -46,7 +46,7 @@ export default function Gallery() {
                 alt={`Slide ${index + 1}`}
                 layout="fill"
                 objectFit="cover"
-                className="rounded-lg cursor-grab"
+                className="cursor-grab"
               />
             </div>
           </SwiperSlide>

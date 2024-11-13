@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
+import { ChevronRight } from "lucide-react";
 
 // const center = {
 //   lat: 41.311081,
@@ -35,7 +36,7 @@ export default function ContactUs() {
       </p>
       <div className="grid md:grid-cols-2 gap-8">
         <Card className="w-full">
-          <CardContent className="w-full h-[523px]">
+          <CardContent className="w-full h-[423px]">
             {/* <LoadScript
               googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
             >
@@ -50,40 +51,37 @@ export default function ContactUs() {
           </CardContent>
         </Card>
 
-        <Card>
-          <CardContent className="p-6">
+        <>
+          <CardContent className="h-[423px]">
             <form className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="firstName">Isim</Label>
                   <Input
-                    className="h-[76px]"
+                    className="h-[70px] placeholder:text-gray-400 placeholder:text-xl"
                     id="firstName"
                     name="firstName"
+                    placeholder="Isim"
                     required
                   />
                 </div>
                 <div>
-                  <Label htmlFor="lastName" className="">
-                    Familya
-                  </Label>
                   <Input
-                    className="h-[76px]"
+                    className="h-[76px] placeholder:text-gray-400 placeholder:text-xl"
                     id="lastName"
                     name="lastName"
+                    placeholder="Familya"
                     required
                   />
                 </div>
               </div>
 
               <div>
-                <Label htmlFor="phone">Telefon</Label>
                 <div className="flex">
                   <Input
                     id="phone"
                     name="phone"
                     type="tel"
-                    className="rounded h-24"
+                    className="rounded h-24 placeholder:text-gray-400 placeholder:text-xl"
                     placeholder="+998"
                     required
                   />
@@ -91,22 +89,25 @@ export default function ContactUs() {
               </div>
 
               <div>
-                <Label htmlFor="message">Xabar</Label>
                 <Textarea
                   id="message"
                   name="message"
                   rows={4}
                   required
-                  className="h-[231px]"
+                  placeholder="Xabar"
+                  className="h-[205px] placeholder:text-gray-400 placeholder:text-xl"
                 />
               </div>
             </form>
           </CardContent>
-        </Card>
+        </>
       </div>
       <div className="flex items-end justify-end py-4">
-        <Button type="submit" className="bg-white text-black">
-          Yuborish
+        <Button className="bg-white text-black transition-all duration-300 ease-out hover:border-white hover:bg-blue-500 border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-28  h-12 overflow-hidden px-10">
+          <span className="absolute transition-opacity duration-500 ease-out opacity-100 group-hover:opacity-0">
+            Yuborish
+          </span>
+          <ChevronRight className="absolute transform transition-all duration-500 ease-out opacity-0 group-hover:opacity-100 translate-x-5 group-hover:translate-x-0 text-white" />
         </Button>
       </div>
     </div>

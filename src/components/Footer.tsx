@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-wrap items-center justify-center gap-8 py-4 md:space-x-16">
           <div>
             <h2
-              className="mb-6 text-sm font-semibold uppercase text-white"
+              className="mb-6 text-sm font-semibold uppercase text-blue-600"
               id="#"
             >
               Asosiy
@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
           <div>
             <h2
-              className="mb-6 text-sm font-semibold uppercase text-white"
+              className="mb-6 text-sm font-semibold uppercase text-blue-600"
               id="#"
             >
               Xizmatlar
@@ -26,32 +26,38 @@ export default function Footer() {
           <div>
             <Link href={"/rooms"}>
               {" "}
-              <h2 className="mb-6 text-sm font-semibold uppercase text-white">
+              <h2 className="mb-6 text-sm font-semibold uppercase text-blue-600">
                 Xonalar
               </h2>
             </Link>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold uppercase text-white" id="contactus">
+            <h2
+              className="mb-6 text-sm font-semibold uppercase text-blue-600"
+              id="contactus"
+            >
               Boglanish
             </h2>
           </div>
           <div>
-            <h2 className="mb-6 text-sm font-semibold uppercase text-white" id="aboutus">
+            <h2
+              className="mb-6 text-sm font-semibold uppercase text-blue-600"
+              id="aboutus"
+            >
               Biz haqimizda
             </h2>
           </div>
         </div>
         <div className="py-6">
           <div className="flex flex-col items-center justify-center space-y-4 md:flex-row md:space-x-10 md:space-y-0">
-            <div className="text-white flex gap-2">
+            <div className="text-blue-600 flex gap-2">
               <Phone className="text-blue-500" /> +998(50) 005-07-68
             </div>
-            <div className="text-white flex">
+            <div className="text-blue-600 flex">
               <MapPin className="text-blue-500" />
               Urganch sh. Nuri hayot 69
             </div>
-            <div className="text-white">Jamoladdin0831@gmail.com</div>
+            <div className="text-blue-600">Jamoladdin0831@gmail.com</div>
           </div>
           <div className="flex justify-center space-x-5 mt-4">
             <a href="#" className="text-gray-900 hover:text-gray-700">
@@ -76,20 +82,23 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <div className="px-4 py-6 md:flex md:items-center md:justify-center">
-          <div className="flex flex-col items-center md:flex-row md:mt-2">
+        <div className="px-4 py-2 md:flex md:items-center md:justify-center">
+          <div className="flex flex-col items-center md:flex-row">
             <span className="text-sm text-center mb-2 md:mb-0 md:mr-2">
-              © 2023 All Rights Reserved.
+              © Copyright 2024 -Mbos
             </span>
+          </div>
+         
+        </div>
+        <div className="flex items-center justify-center">
             <Image
-              src="/images/Mboslogo.svg"
+              src="/images/Mboslogo.png"
               alt="Logo"
-              className="h-8"
+              className="h-12"
               width={100}
               height={100}
             />
           </div>
-        </div>
       </div>
     </footer>
   );

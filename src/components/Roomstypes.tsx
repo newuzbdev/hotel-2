@@ -68,7 +68,7 @@ export default function Roomstypes() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {rooms.slice(0, 2).map((room) => (
             <Link href={`/${room.slug}`} key={room.id}>
-              <Card className="group overflow-hidden cursor-pointer">
+              <div className="group overflow-hidden cursor-pointer">
                 <CardContent className="p-0 relative aspect-[4/3]">
                   <Image
                     src={room.imageUrl}
@@ -87,7 +87,7 @@ export default function Roomstypes() {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </div>
             </Link>
           ))}
       </div>
@@ -96,7 +96,7 @@ export default function Roomstypes() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
         {rooms.slice(2).map((room) => (
             <Link href={`/${room.slug}`} key={room.id}>
-              <Card className="group overflow-hidden cursor-pointer">
+              <div className="group overflow-hidden cursor-pointer">
                 <CardContent className="p-0 relative aspect-[4/3]">
                   <Image
                     src={room.imageUrl}
@@ -118,7 +118,7 @@ export default function Roomstypes() {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </div>
             </Link>
           ))}
       </div>

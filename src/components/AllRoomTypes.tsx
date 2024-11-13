@@ -66,19 +66,17 @@ export default function AllRoomTypes() {
             </div>
 
             <div className="w-full md:w-1/2 md:px-8 flex flex-col items-center justify-center text-center">
-              {/* Room Title as a Link */}
               <Link href={`/room/${room.slug}`}>
                 <h2 className="text-2xl md:text-3xl lg:text-4xl mb-4 font-medium font-[Zodiak] cursor-pointer">
                   {room.title}
                 </h2>
               </Link>
-              {/* Ko'proq Button as a Link */}
               <Link href={`/${room.slug}`}>
-                <Button className="bg-white text-black transition-all duration-300 ease-out border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-28  h-12 overflow-hidden px-10">
+                <Button className="bg-white text-black transition-all duration-300 ease-out hover:border-white hover:bg-blue-500 border-black border rounded-full font-[Satoshi] flex items-center justify-center group relative w-28  h-12 overflow-hidden px-10">
                   <span className="absolute transition-opacity duration-500 ease-out opacity-100 group-hover:opacity-0">
                     Band qilish
                   </span>
-                  <ChevronRight className="absolute transform transition-all duration-500 ease-out opacity-0 group-hover:opacity-100 translate-x-5 group-hover:translate-x-0" />
+                  <ChevronRight className="absolute transform transition-all duration-500 ease-out opacity-0 group-hover:opacity-100 translate-x-5 group-hover:translate-x-0 text-white" />
                 </Button>
               </Link>
             </div>
