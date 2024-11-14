@@ -139,7 +139,7 @@ export default function Navbar() {
                   {[
                     { href: "/", label: "Asosiy" },
                     { href: "/rooms", label: "Xonalar" },
-                    { href: "/contact", label: "Bog'lanish" },
+                    { href: "/booking", label: "Bog'lanish" },
                     {
                       href: "#aboutus",
                       label: "Biz haqimizda",
