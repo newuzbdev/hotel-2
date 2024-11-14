@@ -34,13 +34,8 @@ export default function AboutUs() {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
-  const prevSlide = () => {
-    setDirection(-1);
-    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  };
-
   const slideVariants = {
-    enter: (direction) => ({
+    enter: (direction:number) => ({
       x: direction > 0 ? 1000 : -1000,
       opacity: 0,
     }),
@@ -53,7 +48,7 @@ export default function AboutUs() {
         ease: "easeInOut",
       },
     },
-    exit: (direction) => ({
+    exit: (direction:number) => ({
       zIndex: 0,
       x: direction < 0 ? 1000 : -1000,
       opacity: 1,
@@ -78,14 +73,14 @@ export default function AboutUs() {
           Biz haqimizda
         </h1>
         <p className="text-black sm:w-[540px] lg:w-[840px] leading-6 ">
-          Bizning mehmonxonamiz — shinamlik va qulaylik uyg'unlashgan maskan.
-          Mehmonlarimizga yuksak darajadagi xizmat ko'rsatish va unutilmas
+          Bizning mehmonxonamiz — shinamlik va qulaylik uyg&apos;unlashgan maskan.
+          Mehmonlarimizga yuksak darajadagi xizmat ko&apos;rsatish va unutilmas
           tajriba ulashish bizning bosh maqsadimizdir. Zamonaviy dizayndagi
-          xonalarimiz, do'stona muhit va ehtiyotkor xizmatimiz bilan sizga huzur
-          bag'ishlaymiz. Har bir mehmon biz uchun alohida ahamiyatga ega.
+          xonalarimiz, do&apos;stona muhit va ehtiyotkor xizmatimiz bilan sizga huzur
+          bag&apos;ishlaymiz. Har bir mehmon biz uchun alohida ahamiyatga ega.
           Sizning istak va ehtiyojlaringizni inobatga olib, har bir tafsilotni
-          mukammal qilishga intilamiz. Ish safaringiz bo'ladimi yoki dam olish
-          uchun kelgan bo'lasizmi, bizning mehmonxonamizda siz o'zingizni uyda
+          mukammal qilishga intilamiz. Ish safaringiz bo&apos;ladimi yoki dam olish
+          uchun kelgan bo&apos;lasizmi, bizning mehmonxonamizda siz o&apos;zingizni uyda
           his qilasiz. Kelgusidagi tashriflaringizni quvonch bilan kutib qolamiz
           va sizga eng yaxshi dam olish imkoniyatini taqdim etishga tayyormiz!
         </p>

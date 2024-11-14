@@ -127,7 +127,7 @@ export default function Vip2Room() {
             className="font-medium text-3xl sm:text-3xl"
             style={{ color: "rgba(19, 99, 222, 1)" }}
           >
-            660 000 000 so'm{" "}
+            660 000 000 so&apos;m{" "}
             <span className="text-black text-base font-[Satoshi]">
               bir kecha
             </span>

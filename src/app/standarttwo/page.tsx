@@ -33,13 +33,9 @@ export default function StandartRoom2() {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
-  const prevSlide = () => {
-    setDirection(-1);
-    setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
-  };
 
   const slideVariants = {
-    enter: (direction) => ({
+    enter: (direction:number) => ({
       x: direction > 0 ? 1000 : -1000,
       opacity: 0,
     }),
@@ -52,7 +48,7 @@ export default function StandartRoom2() {
         ease: "easeInOut",
       },
     },
-    exit: (direction) => ({
+    exit: (direction:number) => ({
       zIndex: 0,
       x: direction < 0 ? 1000 : -1000,
       opacity: 1,

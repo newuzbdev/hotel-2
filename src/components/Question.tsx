@@ -19,7 +19,7 @@ export default function Faq() {
                 color: "rgba(19, 99, 222, 1)",
               }}
             >
-              Tez-Tez So'raladigan Savollar
+              Tez-Tez So&apos;raladigan Savollar
             </h1>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function Faq() {
             </AccordionTrigger>
             <AccordionContent className="pt-4 ">
               Ha, bizning restoranimiz har kuni ertalabdan kechgacha xizmat
-              ko'rsatadi va turli xil milliy va xalqaro taomlarni taklif etadi.
+              ko&apos;rsatadi va turli xil milliy va xalqaro taomlarni taklif etadi.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem
@@ -81,7 +81,7 @@ export default function Faq() {
               </span>
             </AccordionTrigger>
             <AccordionContent className="pt-4">
-              Ha, mehmonxona markaziy joyda joylashgan va ko'plab diqqatga
+              Ha, mehmonxona markaziy joyda joylashgan va ko&apos;plab diqqatga
               sazovor joylar yaqin masofada joylashgan.
             </AccordionContent>
           </AccordionItem>

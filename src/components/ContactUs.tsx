@@ -12,12 +12,12 @@ export default function ContactUs() {
           className="text-[28px] leading-[56px] font-normal font-[Zodiak] sm:2xl md:2xl lg:text-6xl"
           style={{ color: "rgba(19, 99, 222, 1)" }}
         >
-          Biz Bilan Bog'lanish
+          Biz Bilan Bog&apos;lanish
         </h1>
       </div>
 
       <p className="text-center mb-8 text-gray-700 text-base ">
-        Savollaringiz bormi yoki yordam kerakmi? Biz bilan bog'laning - biz
+        Savollaringiz bormi yoki yordam kerakmi? Biz bilan bog&apos;laning - biz
         yordam berishga tayyormiz!
       </p>
       <div className="grid md:grid-cols-2 gap-8">

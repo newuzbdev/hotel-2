@@ -18,7 +18,7 @@ export default function Gallery() {
         Galeriya
       </h1>
       <p className="text-black sm:w-[540px] lg:w-[840px] leading-6">
-        Biz taklif qilayotgan go'zallik va qulaylikni o'rganish uchun
+        Biz taklif qilayotgan go&apos;zallik va qulaylikni o&apos;rganish uchun
         galereyamizga qarang.
       </p>
 
@@ -56,7 +56,7 @@ export default function Gallery() {
       {/* Optional Marquee Text - Hidden on small screens */}
       <div className="absolute lg:top-56 bottom-4 lg:w-full overflow-hidden hidden sm:block md:block">
         <div className="animate-marquee whitespace-nowrap text-8xl font-[Satoshi]">
-          Bizning Mehmonxona galereyamiz va bizning xizmatlarimiz haqida batafsil ma'lumot.
+          Bizning Mehmonxona galereyamiz va bizning xizmatlarimiz haqida batafsil ma&apos;lumot.
         </div>
       </div>
     </div>
